@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=\, initial-scale=1.0" />
+        <title>Dashboard with Html and Css</title>
+        <link rel="stylesheet" href="./css/style.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar__top">
+                    <div class="logo">
+                        <img src="./images/icons8-education-100.png" alt="" />
+                    </div>
+                </div>
+                <div class="sidebar__nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <img
+                                    src="./images/icons8-home-page-24.png"
+                                    alt=""
+                                />
+                                <span><a href="/home">Home</a></span>
+                            </li>
+                            <li>
+                                <img
+                                    src="./images/icons8-shopping-mall-48.png"
+                                    alt=""
+                                />
+                                <span><a href="/products">Products</a></span>
+                            </li>
+                            <li>
+                                <img
+                                    src="./images/icons8-combo-chart-24.png"
+                                    alt=""
+                                />
+                                <span
+                                    ><a href="/statistics">Statistics</a></span
+                                >
+                            </li>
+                            <li>
+                                <img
+                                    src="./images/icons8-check-inbox-24.png"
+                                    alt=""
+                                />
+                                <span><a href="/inbox">Inbox</a></span>
+                            </li>
+                            <li>
+                                <img
+                                    src="./images/icons8-notification-32.png"
+                                    alt=""
+                                />
+                                <span
+                                    ><a href="/notifiations"
+                                        >Notifiations</a
+                                    ></span
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar__bottom">
+                    <img
+                        class="info"
+                        src="./images/icons8-customer-64.png"
+                        alt=""
+                    />
+                    <div class="profile">
+                        <a href="/profile">Mohammad Asadi</a>
+                    </div>
+                    <a href="/setting">
+                        <img
+                            class="setting"
+                            src="./images/icons8-settings-24.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content__header">
+                    <div class="header-page">Products</div>
+                    <div class="buttons">
+                        <img
+                            class="mode"
+                            src="./images/icons8-crescent-moon-48.png"
+                            alt=""
+                        />
+                        <button class="btn">Add Product</button>
+                    </div>
+                </div>
+                <div class="content__action">
+                    <div class="search">
+                        <img
+                            class="icon-search"
+                            src="./images//icons8-search-48.png"
+                            alt=""
+                        />
+                        <input
+                            class="input-search"
+                            type="text"
+                            placeholder="Search..."
+                        />
+                    </div>
+                    <div class="actions">
+                        <div class="filter">
+                            <span>Filter</span>
+                            <img
+                                src="./images/icons8-funnel-48.png"
+                                alt=""
+                                class="icon-filter"
+                            />
+                        </div>
+                        <div class="list-view">
+                            <img
+                                src="./images/icons8-bullet-list-template-option-in-word-document-application-24.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="grid-view">
+                            <img
+                                src="./images/icons8-view-module-24.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="content__table">
+                    <table>
+                        <thead>
+                            <tr class="header">
+                                <th>
+                                    Items
+                                    <button class="sort-button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 512 512"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
+                                            />
+                                        </svg>
+                                    </button>
+                                </th>
+                                <th>
+                                    Category
+                                    <button class="sort-button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 512 512"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
+                                            />
+                                        </svg>
+                                    </button>
+                                </th>
+                                <th>
+                                    Status
+                                    <button class="sort-button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 512 512"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
+                                            />
+                                        </svg>
+                                    </button>
+                                </th>
+                                <th>
+                                    Sales
+                                    <button class="sort-button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 512 512"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
+                                            />
+                                        </svg>
+                                    </button>
+                                </th>
+                                <th>
+                                    Stock
+                                    <button class="sort-button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 512 512"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
+                                            />
+                                        </svg>
+                                    </button>
+                                </th>
+                                <th>
+                                    Price
+                                    <button class="sort-button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 512 512"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
+                                            />
+                                        </svg>
+                                    </button>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status active">Active</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                            <tr class="list">
+                                <td>Mobile</td>
+                                <td>Apple</td>
+                                <td class="status disabled">Disabled</td>
+                                <td>15</td>
+                                <td>36</td>
+                                <td>$5500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>

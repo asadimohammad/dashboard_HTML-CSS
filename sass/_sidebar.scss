@@ -1,0 +1,72 @@
+.sidebar {
+    @extend %d-flex;
+    @include d-flex(space-between , center, column);
+    padding: 15px 15px;
+    width: 20%;
+    background-color: $sidebar;
+    /********************************** sidebar__top */
+    .sidebar__top {
+        @extend %w-100;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #9e9e9e;
+        text-align: center;
+        img {
+            width: 40px;
+        }
+    }
+
+    /********************************* sidebar__nav */
+    .sidebar__nav {
+        @extend %w-100;
+        height: 80%;
+        li {
+            @extend %d-flex;
+            @include d-flex(_, center);
+            @extend %w-100;
+            @include f-size();
+            margin: 25px 0;
+            padding: 10px;
+
+            &:hover {
+                background-color: $sidebar-hover-link;
+            }
+            a {
+                @extend %d-flex;
+                @extend %w-100;
+                color: $sidebar-link;
+            }
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    /***************************** sidebar__bottom */
+    .sidebar__bottom {
+        @extend %d-flex;
+        @include d-flex(space-between,center );
+        @extend %w-100;
+        margin-bottom: 20px;
+        .info {
+            color: $sidebar-color;
+            width: 30px;
+            height: 30px;
+            border: 1px solid $sidebar-color;
+            border-radius: 50%;
+        }
+        .profile {
+            width: 100px;
+            font-size: $font-sm;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $sidebar-color;
+            overflow: hidden;
+            a {
+            color: $sidebar-color;
+            }
+        }
+        .setting {
+            margin-top: 10px;
+        }
+    }
+}

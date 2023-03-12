@@ -1,0 +1,29 @@
+// dark mode
+$app-bg: #101827;
+$content-color: #fff;
+$content-secondary-color: #1d283c;
+$sidebar: #151e2f;
+$sidebar-color: #fff;
+$sidebar-link: #fff;
+$sidebar-active-link: #1d283c;
+$sidebar-hover-link: #1a2539;
+$action-color: #2869ff;
+$action-color-hover: #6291fd;
+$table-header: #1a2131;
+$table-border: #1a2131;
+$status-active-color: #2BA570;
+$status-active-bg: #214347;
+$filter-reset: #2c394f;
+$filter-shadow: rgba(16, 24, 39, 0.8) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+// light mode
+$app-bg-light-mode: #fff;
+$sidebar-light-mode: #f3f6fd;
+$content-secondary-color-light-mode: #f3f6fd;
+$content-color-light-mode: #1f1c2e;
+$sidebar-link-light-mode: #1f1c2e;
+$sidebar-hover-link-light-mode: rgba(195, 207, 244, 0.5);
+$sidebar-active-link-light-mode: rgba(195, 207, 244, 1);
+$sidebar-color-light-mode: #1f1c2e;
+$filter-shadow-light-mode: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

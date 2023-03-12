@@ -1,0 +1,10 @@
+@mixin d-flex($jc:center, $ai:center, $dir: row , $gap: 10px) {
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin f-size($size : 1) {
+    font-size: $font-md * $size;
+}
